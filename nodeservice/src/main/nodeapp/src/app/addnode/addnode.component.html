@@ -1,0 +1,13 @@
+<div class="col-sm-3 col-md-3 col-lg-3">
+        <form method="post"> 
+            <input  type="text"  id="textbox" class="form-control" placeholder="Node Identification" [(ngModel)]="model.nodeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Node Name" [(ngModel)]="model.nodeName" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Starting Node" [(ngModel)]="model.startNodeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Ending Node" [(ngModel)]="model.endNodeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Node Location" [(ngModel)]="model.nodeLocation" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Longitude" [(ngModel)]="model.longitude" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Latitude" [(ngModel)]="model.latitude" [ngModelOptions]="{standalone: true}"/><br/>
+            
+            <button type="submit"  class="frm-button" (click)="submitData()" value="Add Node">Add Node</button><br/><br/>  
+        </form>
+    </div>

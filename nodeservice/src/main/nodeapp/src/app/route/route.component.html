@@ -1,0 +1,41 @@
+<div class="col-lg-12 col-md-12 col-sm-12" style="text-align: left;">
+<div>
+    <ul class="navigation">
+    <li>
+        
+        <a routerLink="/addroute" routerLinkActive="active">
+      <button class="frm-button" style="margin-left:10px;"> 
+        Add Route
+      </button>
+    </a>
+    </li>
+    <li>
+        
+       
+
+        
+    </li>
+</ul>
+</div>
+<div style="width:100%;height:70px;"></div>
+<div>
+ <ul class="lstnodes">
+            <li *ngFor="let route of routes" class="nodeblock">
+                
+                <label>{{route.routeName}}</label><br/>
+                <br/>
+                    <a routerLink="/addroute" routerLinkActive="active">
+                        <button class="action-button" style="margin-left:10px;"> 
+                            Update
+                        </button>
+                    </a>
+                
+                    <a [routerLink]="['/nodelist',route.routeId,route.startNodeLatitude,route.startNodeLongitude]" routerLinkActive="active">
+                        <button class="action-button" style="margin-left:10px;"> 
+                            Get Details
+                        </button>
+                    </a>
+            </li>
+ </ul>
+</div>
+</div>

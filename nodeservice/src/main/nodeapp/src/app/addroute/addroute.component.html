@@ -1,0 +1,14 @@
+<div class="col-sm-3 col-md-3 col-lg-3">
+        <form method="post"> 
+            <input  type="text"  id="textbox" class="form-control" placeholder="Route Id" [(ngModel)]="model.routeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Route Name" [(ngModel)]="model.routeName" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Start Node Id" [(ngModel)]="model.startNodeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="End Node Id" [(ngModel)]="model.endNodeId" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Start Node Latitude" [(ngModel)]="model.startNodeLatitude" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="Start Node Longitude" [(ngModel)]="model.startNodeLongitude" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="End Node Latitude" [(ngModel)]="model.endNodeLatitude" [ngModelOptions]="{standalone: true}"/><br/>
+            <input  type="text"  id="textbox" class="form-control" placeholder="End Node Longitude" [(ngModel)]="model.endNodeLongitude" [ngModelOptions]="{standalone: true}"/><br/>
+            
+            <button type="submit"  class="frm-button" (click)="submitData()" value="Add Route">Add Route</button><br/><br/>  
+        </form>
+    </div>
